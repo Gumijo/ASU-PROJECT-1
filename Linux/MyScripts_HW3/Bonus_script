@@ -1,0 +1,19 @@
+#!/bin/bash
+#Script to find who is the worker in BlackJack, Roulette, Texas hold
+#Please define Specifi Time, Date and casino game being played
+echo "Please enter Game # 1-BlackJack 2-Roulette Dealer 3-Texas hold"
+read var1
+if [ "$var1" == "1" ]; then
+echo Blackjack Worker
+find -type f -iname *$1* | xargs grep $2 | grep $3 | awk -F " " '{print $3,$4}'
+fi
+
+if [ "$var1" == "2" ]; then
+echo Roulette Worker
+find -type f -iname *$1* | xargs grep $2 | grep $3 | awk -F " " '{print $5,$6}'
+fi
+
+if [ "$var1" == "3" ]; then
+echo Texas hold Worker
+find -type f -iname *$1* | xargs grep $2 | grep $3 | awk -F " " '{print $7,$8}'
+fi

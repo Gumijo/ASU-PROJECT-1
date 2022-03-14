@@ -1,0 +1,5 @@
+#!/bin/bash
+#Can analyze the employee schedule to easily find the roulette dealer at a specific time
+#Please specify the date (Four digits) and Time
+echo The roulette worker is
+find -type f -iname *$1* |xargs grep $2 | grep $3 | awk -F " " '{print $5,$6}'

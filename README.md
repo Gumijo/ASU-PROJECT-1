@@ -77,13 +77,13 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 
-This ELK server is configured to monitor the following machines:
+..This ELK server is configured to monitor the following machines:
 - _Web-1 10.0.0.5_
 - _Web-2 10.0.0.6_
 
 We have installed the following Beats on these machines:
 - _Filebeat_
-- _Metricbeat_
+- _Metricbeat_..
 
 These Beats allow us to collect the following information from each machine:
 - _Filebeat help us collect logs from our VM's, like syslog, that can help ups see successfully or unsuccessfully attempts to remote into our VM's_

@@ -78,12 +78,12 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 
 ```This ELK server is configured to monitor the following machines:
-- _Web-1 10.0.0.5_
-- _Web-2 10.0.0.6_
+- Web-1 10.0.0.5
+- Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
-- _Filebeat_
-- _Metricbeat_
+- Filebeat
+- Metricbeat
 ```
 
 These Beats allow us to collect the following information from each machine:
@@ -123,5 +123,7 @@ SSH into the control node and follow the steps below:
 
 Resources:
 
-docs.ansible.com. (n.d.). Intro to playbooks — Ansible Documentation. [online] Available at: https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html.
+```docs.ansible.com. (n.d.). Intro to playbooks — Ansible Documentation. [online] Available at: https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html.
+
 Avi Networks. (n.d.). Load Balancing 101 - Learn All About Load Balancers. [online] Available at: https://avinetworks.com/what-is-load-balancing/#:~:text=Load%20Balancing%20plays%20an%20important [Accessed 15 Mar. 2022].
+```

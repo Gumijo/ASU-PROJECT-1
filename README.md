@@ -106,15 +106,16 @@ SSH into the control node and follow the steps below:
   [elk]
   10.1.0.5 ansible_python_interpreter=/usr/bin/python3
 
-You can test it out by using the following command:
-ansible webservers -m ping
-ansible elk -m ping
+  You can test it out by using the following command:
+  ansible webservers -m ping
+  ansible elk -m ping
 
-if response is "SUCCESS" it has been set up correctly.
+  if response is "SUCCESS" it has been set up correctly.
 
 - Run the playbook with the following command: ansible-playbook Elk-vm.yml
 - navigate to Kibana http://[Elk-VM public ip]:5601/app/kibana#/home to check that the installation worked as expected
 
 Resources:
+
 docs.ansible.com. (n.d.). Intro to playbooks — Ansible Documentation. [online] Available at: https://docs.ansible.com/ansible/latest/user_guide/playbooks_intro.html.
 Avi Networks. (n.d.). Load Balancing 101 - Learn All About Load Balancers. [online] Available at: https://avinetworks.com/what-is-load-balancing/#:~:text=Load%20Balancing%20plays%20an%20important [Accessed 15 Mar. 2022].

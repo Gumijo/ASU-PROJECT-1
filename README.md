@@ -77,13 +77,14 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ### Target Machines & Beats
 
-..This ELK server is configured to monitor the following machines:
+```This ELK server is configured to monitor the following machines:
 - _Web-1 10.0.0.5_
 - _Web-2 10.0.0.6_
 
 We have installed the following Beats on these machines:
 - _Filebeat_
-- _Metricbeat_..
+- _Metricbeat_
+```
 
 These Beats allow us to collect the following information from each machine:
 - _Filebeat help us collect logs from our VM's, like syslog, that can help ups see successfully or unsuccessfully attempts to remote into our VM's_
@@ -97,9 +98,9 @@ SSH into the control node and follow the steps below:
 - The playbook use it this project is Ansible/Elk-vm.yml, it should be copy here /etc/ansible# you can create subfolders if desired. Remember that on out playbook we must specify the VM's group we want this to applied (webservers or elk for this project)
 - Modify the hosts file to add your webservers and elk VMs, the file can be located in /etc/ansible/hosts. It can be modify by using nano command.
  _/etc/ansible# nano hosts_
-  - Adding your VMs should be like this:
+- Adding your VMs should be like this:
 
-  [webservers]
+  ```[webservers]
   
   10.0.0.6 ansible_python_interpreter=/usr/bin/python3
   10.0.0.5 ansible_python_interpreter=/usr/bin/python3
@@ -107,12 +108,13 @@ SSH into the control node and follow the steps below:
   [elk]
   
   10.1.0.5 ansible_python_interpreter=/usr/bin/python3
-
+  ```
 
   You can test it out by using the following command:
   
-  ansible webservers -m ping
+  ```ansible webservers -m ping
   ansible elk -m ping
+  ```
 
   if response is "SUCCESS" it has been set up correctly.
 

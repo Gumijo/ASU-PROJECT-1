@@ -108,7 +108,9 @@ SSH into the control node and follow the steps below:
   
   10.1.0.5 ansible_python_interpreter=/usr/bin/python3
 
+
   You can test it out by using the following command:
+  
   ansible webservers -m ping
   ansible elk -m ping
 

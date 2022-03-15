@@ -4,7 +4,7 @@ ASU Cybersecurity Bootcamp Project 1
 ## Automated ELK Stack Deployment
 The files in this repository were used to configure the network depicted below.
 
- Diagrams/AoiResource+Elk.drawio.png
+[Aoi Resources Diagram](https://github.com/Gumijo/ASU-PROJECT-1/blob/main/Diagrams/AoiResource%2BElk.drawio.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Elk-vm.yml file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -74,6 +74,8 @@ The playbook implements the following tasks:
   -Enable service docker on boot
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
+![ElkDockerPs](https://user-images.githubusercontent.com/93943552/158482652-1161d847-912c-4847-a841-b6273a62f6aa.PNG)
 
 ### Target Machines & Beats
 
